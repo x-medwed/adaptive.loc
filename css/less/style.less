@@ -71,6 +71,29 @@ main {
 		}
 	}
 }
+
+.project {
+	.gallery {
+		width: 80%;
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+		.photo-itm {
+			width: 25%;
+			img {
+				box-sizing: border-box;
+				max-width: 100%;
+				opacity: 0.8;
+				padding: 0 5px;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
 footer {
 	width: 100%;
 	height: auto;
@@ -138,6 +161,14 @@ footer {
 			}
 		}
 	}
+	.project {
+		.gallery {
+			.photo-itm {
+				width: 45%;
+				margin-left: 10px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 450px) {
@@ -148,6 +179,19 @@ footer {
 				.advantages__item {
 					width: 100%;
 				}
+			}
+		}
+	}
+	.project {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.gallery {
+			width: auto;
+			margin: auto;
+			.photo-itm {
+				width: 70%;
+				margin: 0 auto;
 			}
 		}
 	}
